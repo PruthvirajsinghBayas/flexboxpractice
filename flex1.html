@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex1</title>
+<style>
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  gap: 20px;
+  padding: 20px;
+  background: #FFB5B5;
+}
+
+.header {
+  background: #98D8D6;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.main {
+  display: flex;
+  gap: 20px;
+  flex: 1;
+}
+
+.aside {
+  background: #98D8D6;
+  padding: 20px;
+  flex: 1;
+  text-align: center;
+  color: white;
+}
+
+.article {
+  background:palevioletred;
+  padding-top: 410px;
+  flex: 3;
+  text-align: center;
+  color: white;
+}
+
+.image-grid {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  align-content:;
+}
+
+.image-box {
+  background: #DDDDDD;
+  padding: 40px;
+  margin: 10px 10px 20px 20px;
+  flex: 1;
+  text-align: center;
+}
+
+.footer {
+  background: #98D8D6;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <header class="header"><h1>Header</h1></header>
+    <main class="main">
+      <aside class="aside"><h1>Aside</h1></aside>
+      <div class="article">
+       <h1> Article</h1>
+        <div class="image-grid">
+          <div class="image-box"><h1>Image</h1></div>
+          <div class="image-box"><h1>Image</h1></div>
+          <div class="image-box"><h1>Image</h1></div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer"><h1>Footer</h1></footer>
+  </div>
+</body>
+</html>
