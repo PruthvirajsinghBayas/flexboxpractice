@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex2</title>
+    <style>
+        .nav {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background: #FF4500;
+          padding: 10px 20px;
+        }
+        
+        .nav-left {
+          display: flex;
+          gap: 20px;
+          align-items: center;
+          color: white;
+        }
+        
+        .search-container {
+          display: flex;
+          gap: 5px;
+        }
+        
+        .search-input {
+          padding: 5px;
+          border-radius: 3px;
+          border: none;
+        }
+        
+        .search-button {
+          padding: 5px 10px;
+          border-radius: 12px;
+          border: none;
+          background: white;
+          color: #FF4500;
+        }
+        
+        </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-left">
+          <div>Logo</div>
+          <div>Home</div>
+          <div>Products</div>
+          <div>Services</div>
+        </div>
+        <div class="search-container">
+          <input type="text" class="search-input" placeholder="Search...">
+          <button class="search-button">Go</button>
+        </div>
+      </nav>
+</body>
+</html>
